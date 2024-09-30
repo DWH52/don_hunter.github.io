@@ -1,0 +1,147 @@
+/* Base styles for everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* General body styling for light mode */
+body {
+    background-color: #f0f2f5; /* Soft background for light mode */
+    color: #333; /* Dark text color */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff; /* White background for light mode */
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+h1 {
+    font-size: 36px;
+    color: #2c3e50; /* Dark blue for main heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2980b9; /* Light blue for section headings */
+    margin-top: 30px;
+    border-bottom: 2px solid #2980b9; /* Bottom border for distinction */
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+}
+
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    list-style-type: square; /* Custom bullet style */
+    color: #7f8c8d;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header p {
+    color: #7f8c8d;
+    font-size: 18px;
+}
+
+/* Footer for activities and interests */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #555;
+    text-align: center;
+}
+
+/* Dark mode styles */
+body.dark {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+body.dark .container {
+    background-color: #1e1e1e; /* Darker background for container */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark h1, body.dark h2, body.dark h3 {
+    color: #f0f2f5; /* Light headings */
+}
+
+body.dark p {
+    color: #ccc; /* Light text for paragraphs */
+}
+
+body.dark ul li {
+    color: #aaa; /* Softer color for bullet points in dark mode */
+}
+
+body.dark footer {
+    color: #ccc; /* Light footer color */
+}
+
+/* Toggle button styling */
+#theme-toggle {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #2980b9; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-toggle:hover {
+    background-color: #1b6fa5; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}

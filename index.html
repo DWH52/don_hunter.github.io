@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Hunter, Jr. - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <div class="container">
+        <header>
+            <h1>Don Hunter, Jr.</h1>
+            <p>Denham Springs, LA | (225) 333-7731 | donniehunter52@gmail.com</p>
+            <h2>Objective</h2>
+            <p>Seeking employment in degree-related fields.</p>
+        </header>
+
+        <section>
+            <h2>Executive Summary</h2>
+            <p>
+                Highly knowledgeable, goal-oriented leader who takes pride in their work. Responsible for personnel accountability and 
+                developing others. Effective time-management skills, works well individually and as part of a team in low and high stress 
+                environments. Enthusiastic and resilient professional who gives maximum effort to excel in job performance. Seeking 
+                employment in degree-related fields to refine knowledge and skills to apply toward a career and a stable lifestyle as a 
+                life-long learner.
+            </p>
+            <ul>
+                <li>Holds US Secret Security Clearance</li>
+                <li>Operation Inherent Resolve - Veteran (2022-2023)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            
+            <h3>Louisiana Army National Guard – Staff Sergeant</h3>
+            <p>Air Traffic Control Specialist | April 2015 – Present</p>
+            <ul>
+                <li>Issues information and clearance for properly separating and sequencing aircraft under their control.</li>
+                <li>Issues instructions for orderly movement of traffic (aircraft, vehicles, and pedestrians) on the movement area.</li>
+                <li>Informs pilots of nearby aircraft or potentially hazardous weather.</li>
+                <li>Alerts authorities in cases of emergency or when an aircraft is in distress.</li>
+                <li>Reviews and maintains facility logs and daily checklists.</li>
+            </ul>
+
+            <h3>IT/Programming Intern – Bloomingfoods Co-op Market</h3>
+            <p>September 2023 – October 2023</p>
+            <ul>
+                <li>Troubleshoots and remedies common workplace technical issues, including telecommunication equipment, point-of-sales systems, and retail equipment.</li>
+                <li>Collaborates on preventative maintenance measures for workplace systems.</li>
+                <li>Developed a web application using CSS, HTML, JavaScript, ReactJS, and NextJS to streamline HR processes.</li>
+            </ul>
+
+            <h3>Air Traffic Control Liaison Officer – 2-149th GSAB; Iraq (Operation Inherent Resolve)</h3>
+            <p>June 2022 – June 2023</p>
+            <ul>
+                <li>Bridges communications between local Kurdish-Iraqi air traffic controllers and Joint Coalition partners.</li>
+                <li>Mitigates crossfire and hazardous issues by coordinating with air traffic controllers and local supervisors.</li>
+                <li>Establishes working relationships with local authorities and Joint Coalition partners to ensure the safety of civilian and military aircraft.</li>
+                <li>Responsible for the well-being, training, and evaluation of Soldiers in the working group.</li>
+            </ul>
+
+            <h3>General Work Experience: Sales/Customer Service – Restaurants</h3>
+            <p>Baton Rouge – Denham Springs, LA | September 2013 – March 2021</p>
+            <ul>
+                <li>Provides exemplary service to create a memorable dining experience and gain repeat business.</li>
+                <li>Remains knowledgeable about company goods and services to recommend solutions to consumers.</li>
+                <li>Resolves customer concerns effectively, escalating as needed.</li>
+                <li>Assists management with training, stocking, and cleanliness to maintain health and safety standards.</li>
+            </ul>
+
+            <h3>Research Assistant – Louisiana State University</h3>
+            <p>January 2018 – August 2018</p>
+            <ul>
+                <li>Assisted in researching classified technologies to fulfill client specifications.</li>
+                <li>Studied radio signals and processing, contributing to peer-reviewed progress reports.</li>
+                <li>Worked with GNU radio software, SDR hardware, and block-based programming to contribute to projects.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education & Related Training</h2>
+            <h3>Louisiana State University (LSU), Baton Rouge, LA</h3>
+            <p>August 2016 – December 2021; Resuming January 2024</p>
+            <p>Computer Engineering, Computer Science | Minor: Digital Media Arts & Engineering Technologies</p>
+            <p>Credit Hours: 119 | GPA: 3.23</p>
+            <p><strong>Related Coursework:</strong> Circuits, Digital Logic, Programming in C++, Microelectronics, Data Structures</p>
+
+            <h3>Military/Technical Courses:</h3>
+            <ul>
+                <li>Army Air Traffic Control Operator Course</li>
+                <li>Foreign Object Elimination (FOE) Certified</li>
+                <li>Unit Movement Officer Deployment Planning Course</li>
+                <li>Army Distributed Leader Course 1 & 2</li>
+                <li>Army Air Traffic Control Operator Advanced Leader Course</li>
+                <li>Army Basic Leaders Course</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Additional Skills</h2>
+            <ul>
+                <li>Basic & Advanced Computer Literacy</li>
+                <li>Office Suite Literacy</li>
+                <li>Computer Programming</li>
+                <li>Data Entry</li>
+                <li>Public Speaking</li>
+                <li>Critical Thinking & Decision Making</li>
+                <li>Multi-tasking</li>
+            </ul>
+        </section>
+
+        <footer>
+            <h2>Activities</h2>
+            <p>Golfing, Board Games, Dungeons & Dragons, Freelance Coding, Online Gaming</p>
+        </footer>
+    </div>
+    <script>
+        // Selecting the button and the body
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+    
+        // Check if a theme is already set in localStorage
+        const currentTheme = localStorage.getItem('theme');
+        
+        // If a theme is stored, apply it
+        if (currentTheme === 'dark') {
+            body.classList.add('dark');
+            toggleButton.textContent = 'Light Mode';
+        }
+    
+        // Add event listener for the toggle button
+        toggleButton.addEventListener('click', function() {
+            body.classList.toggle('dark');
+            
+            // Set button text according to the mode
+            if (body.classList.contains('dark')) {
+                toggleButton.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark'); // Save preference to localStorage
+            } else {
+                toggleButton.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light'); // Save preference to localStorage
+            }
+        });
+    </script>
+</body>
+</html>
