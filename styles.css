@@ -128,7 +128,7 @@ body.dark footer {
     background-color: #7901B5; /* Darker shade on hover */
 }
 
-#theme-toggle.dark {
+button.dark {
     background-color: #F3F501;
     color: #A201F3;
 }
