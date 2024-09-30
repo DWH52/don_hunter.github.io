@@ -127,6 +127,11 @@ body.dark footer {
     background-color: #1b6fa5; /* Darker shade on hover */
 }
 
+#qr-code {
+    width: 150px;  /* Set desired width */
+    height: 150px; /* Set desired height */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
