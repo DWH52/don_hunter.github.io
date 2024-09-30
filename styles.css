@@ -94,7 +94,8 @@ body.dark .container {
 }
 
 body.dark h1, body.dark h2, body.dark h3 {
-    color: #f0f2f5; /* Light headings */
+    /*color: #f0f2f5; /* Light headings */
+    color: #F3F501;
 }
 
 body.dark p {
