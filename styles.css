@@ -135,7 +135,7 @@ body.dark footer {
 #qr-code {
     width: 150px;  /* Set desired width */
     height: 150px; /* Set desired height */
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Responsive Design */
