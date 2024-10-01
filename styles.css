@@ -8,7 +8,7 @@
 
 /* General body styling for light mode */
 body {
-    background-color: #1e1e1e; /* Soft background for light mode */
+    background-color: #646464; /* Soft background for light mode */
     color: #333; /* Dark text color */
     font-size: 16px;
     line-height: 1.6;
@@ -95,6 +95,9 @@ body.dark .container {
 body.dark h1, body.dark h2, body.dark h3 {
     /*color: #f0f2f5; /* Light headings */
     color: #FDD023;
+}
+body.dark h2 {
+    border-bottom: 2px solid #4d2683;
 }
 
 body.dark p {
