@@ -8,7 +8,7 @@
 
 /* General body styling for light mode */
 body {
-    background-color: #f0f2f5; /* Soft background for light mode */
+    background-color: #1e1e1e; /* Soft background for light mode */
     color: #333; /* Dark text color */
     font-size: 16px;
     line-height: 1.6;
@@ -32,9 +32,9 @@ h1 {
 
 h2 {
     font-size: 28px;
-    color: #A201F3; /* Light blue for section headings */
+    color: #301456; /* Light blue for section headings */
     margin-top: 30px;
-    border-bottom: 2px solid #A201F3; /* Bottom border for distinction */
+    border-bottom: 2px solid #301456; /* Bottom border for distinction */
     padding-bottom: 5px;
 }
 
@@ -94,7 +94,7 @@ body.dark .container {
 
 body.dark h1, body.dark h2, body.dark h3 {
     /*color: #f0f2f5; /* Light headings */
-    color: #F3F501;
+    color: #FDD023;
 }
 
 body.dark p {
@@ -113,8 +113,8 @@ body.dark footer {
 #theme-toggle {
     cursor: pointer;
     padding: 10px 20px;
-    background-color: #A201F3; /* Purple button */
-    color: #F3F501;
+    background-color: #301456; /* Purple button */
+    color: #FDD023;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -124,16 +124,16 @@ body.dark footer {
 }
 
 #theme-toggle:hover {
-    background-color: #7901B5; /* Darker shade on hover */
+    background-color: #522d86; /* Brighter shade on hover */
 }
 
 #theme-toggle.dark {
-    background-color: #F3F501;
-    color: #A201F3;
+    background-color: #FDD023;
+    color: #301456;
 }
 #qr-code {
-    width: 150px;  /* Set desired width */
-    height: 150px; /* Set desired height */
+    width: 200px;  /* Set desired width */
+    height: 200px; /* Set desired height */
     padding: 10px;
 }
 
